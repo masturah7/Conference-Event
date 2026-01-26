@@ -19,12 +19,109 @@
 }
 .carousel-caption h3{
   font-size: 3rem;
-  color:rgb(225, 239, 252);
+
   
   
   
 }
 .carousel-caption p{
   font-size: 1.2rem;
+ 
   
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  transition: opacity .5s;
+}
+.foot{
+  background-color: rgba(6, 6, 6, 0.66);
+}
+.foot p{
+  font-size: 1.2rem;
+}
+.footer{
+  font-size: 1rem;
+  
+}
+.registeration{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../src/assets/Register.jpg) ;
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.registeration p{
+  font-size: 1.2rem;
+  padding-top: 1rem ;
+}
+
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.speaker-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.speaker-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+
+.speaker-info {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.speaker-info h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.speaker-info span {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.speaker-card:hover .speaker-overlay {
+  opacity: 1;
+}
+
+.speaker-card:hover .speaker-info {
+  bottom: 25px;
+}
+
+.speaker-card:hover .speaker-img {
+  transform: scale(1.05);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: black;
 }

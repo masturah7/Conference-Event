@@ -33,6 +33,7 @@ function Hero() {
 
         <Carousel.Item key={index} className='slider'>
         <img src={slide.imageUrl} alt={slide.title} />
+        <div className="overlay"></div>
         <Carousel.Caption>
           <h3>{slide.title}</h3>
           <p>{slide.description}</p>
