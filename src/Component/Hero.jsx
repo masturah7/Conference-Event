@@ -28,7 +28,7 @@ const slides = [
 
 function Hero() {
   return (
-    <Carousel fade data-bs-ride="carousel" interval={3000} pause={false}>
+    <Carousel id='home' fade data-bs-ride="carousel" interval={3000} pause={false}>
         {slides.map((slide, index) => (
 
         <Carousel.Item key={index} className='slider'>

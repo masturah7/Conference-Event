@@ -5,9 +5,9 @@ import present from "../assets/presentation.jpg";
 
 function About() {
   return (
-    <Container className="py-5">
+    <Container id="about" className="py-5">
       <Row className="align-items-center">
-        <Col>
+        <Col xs={12}  md={6}>
           <img
             src={present}
             alt="About"
@@ -17,8 +17,8 @@ function About() {
           />
         </Col>
 
-        <Col>
-          <h3>ABOUT THE CONFERENCE</h3>
+        <Col xs={12}  md={6} className="mt-4">
+          <h6 className="text-muted mb-2">ABOUT THE CONFERENCE</h6>
           <h4>About Catalyst X Conference</h4>
 
           <p>

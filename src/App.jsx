@@ -3,7 +3,7 @@ import NavBar from './Component/NavBar'
 import Hero from './Component/Hero'
 import About from './Component/About'
 import Speaker from './Component/Speaker'
-import Contact from './Component/Contact'
+import EventDetails from './Component/Event-Details'
 import Footer from './Component/Footer'
 import Catalyst from './Component/Catalyst'
 import CTA from './Component/CTA'
@@ -20,8 +20,7 @@ const App = () => {
       <Catalyst />
       <Speaker />
       <Registration />
-      
-      <Contact />
+      <EventDetails />
       <Footer />
     </div>
   )

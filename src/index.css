@@ -4,7 +4,15 @@
 }
 #basic-navbar-nav a:hover{
   color: gold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index:99999;
 }
 
 .slider img{
@@ -43,6 +51,10 @@
   background-color: rgba(6, 6, 6, 0.66);
 }
 .foot p{
+  font-size: 1.1rem;
+  
+}
+.foot h4{
   font-size: 1.2rem;
 }
 .footer{

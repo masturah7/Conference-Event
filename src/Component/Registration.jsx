@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/esm/Col'
 
 const Registration = () => {
   return (
-    <Container fluid className='py-5  text-center text-white'>
+    <Container id="register" fluid className='py-5  text-center text-white'>
        <Row className="registeration">
         <Col>
         

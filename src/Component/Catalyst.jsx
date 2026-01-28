@@ -5,9 +5,9 @@ import audience from "../assets/audience.jpg";
 
 function Catalyst() {
   return (
-    <Container fluid className="p-5 bg-dark " style={{color:'white'}}>
+    <Container id="catalyst" fluid className="p-5 bg-dark " style={{color:'white'}}>
       <Row className="align-items-center">
-        <Col>
+        <Col xs={12}  md={6}>
           <h3>WHY CATALYST X</h3>
           <h4>Why Attend Catalyst X?</h4>
 
@@ -29,7 +29,7 @@ function Catalyst() {
             <li>Position yourself for growth, leadership, and opportunity</li>
           </ul>
         </Col>
-        <Col>
+        <Col xs={12}  md={6}>
           <img
             src={audience}
             alt="Audience"

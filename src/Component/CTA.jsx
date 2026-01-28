@@ -16,15 +16,15 @@ const CTA = () => {
     <div>
       <Container fluid className="p-5 bg-primary text-white ">
         <Row>
-        <Col>
+        <Col xs={12}  lg={6}>
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
 <a href="https://logwork.com/countdown-acth" className="countdown-timer" data-style="flip" data-timezone="Africa/Lagos" data-textcolor="#ffffff" data-date="2026-02-28 09:00" data-background="" data-digitscolor="#f7f4f4" data-unitscolor="#ffffff">Countdown To D-day</a></Col>
     
-        <Col className="text-white ps-5 border-start border-white">
-        <h3>Catalyst X Conference 2026</h3>
-        <h5>From Ideas to Implementation: Scaling African-Led Solutions for Global Impact.
+        <Col xs={12} lg={6} className="text-white ps-5 border-start border-white">
+        <h6 className='text-uppercase opacity-75 mb-2'>Catalyst X 2026</h6>
+        <h2 className='fw-bold mb-0'>From Ideas to Implementation: Scaling African-Led Solutions for Global Impact.
 
-</h5>
+</h2>
 
         </Col>
         </Row>

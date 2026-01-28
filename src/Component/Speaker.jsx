@@ -78,9 +78,9 @@ const Speaker = () => {
 
     <>
 
-    <section className="mt-5 text-center mb-5">
+    <section id="speakers" className="mt-5 text-center mb-5">
 
-        <h1> Meet the Speaker</h1>
+        <h1> Meet the Speakers</h1>
         <p>Inspiring Experience, Bold Ideals. Catalyst with the difference</p>
     </section>
     <Carousel interval={3500} pause={false} indicators={false} className="pb-5">

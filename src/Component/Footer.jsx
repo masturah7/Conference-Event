@@ -16,19 +16,19 @@ const Footer = () => {
   return (
     <Container fluid className=' text-white '>
       <Row className='foot   p-5'>
-        <Col>
-        <h2>Catalyst X Conference 2026</h2>
+        <Col md={4}>
+        <h4>Catalyst X Conference 2026</h4>
         <p><strong>Theme:</strong> From Ideas to Implementation: <br/>Scaling African-Led Solutions for Global Impact.
         </p>
         </Col>
-        <Col>
-        <h2>Contact</h2>
-        <p><strong>Date:</strong> 28 February 2026</p>
-        <p><strong>Venue:</strong> Landmark Event Center, Victoria Island, Lagos.</p>
-        <p><strong>Email:</strong> catalystx@gmail.com</p>
-        <p><strong>Phone:</strong> +2349021020191</p>
+        <Col  md={4}>
+        <h4>Contact</h4>
+        <p><strong className='fs-5'>Date:</strong> 28 February 2026</p>
+        <p><strong className='fs-5' >Venue:</strong> Landmark Event Center, Victoria Island, Lagos.</p>
+        <p><strong className='fs-5'>Email:</strong> catalystx@gmail.com</p>
+        <p><strong className='fs-5'>Phone:</strong> +2349021020191</p>
         </Col>
-        <Col >
+        <Col md={4} >
         
 <a href="https://logwork.com/countdown-acth" className="countdown-timer" data-style="flip" data-timezone="Africa/Lagos" data-textcolor="#ffffff" data-date="2026-02-28 09:00" data-background="" data-digitscolor="#f7f4f4" data-unitscolor="#ffffff">Countdown To D-day</a>
         </Col>
