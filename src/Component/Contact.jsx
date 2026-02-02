@@ -4,9 +4,9 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import present from "../assets/presentation.jpg";
 
-const EventDetails = () => {
+const Contact = () => {
   return (
-    <Container className="py-5">
+    <Container id="contact" className="py-5">
       <Row className="align-items-center">
         <Col xs={12} md={6}>
           <img
@@ -38,4 +38,4 @@ const EventDetails = () => {
   );
 };
 
-export default EventDetails;
+export default Contact;

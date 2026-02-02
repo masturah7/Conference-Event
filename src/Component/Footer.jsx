@@ -30,7 +30,7 @@ const Footer = () => {
         </Col>
         <Col md={4} >
         
-<a href="https://logwork.com/countdown-acth" className="countdown-timer fs-5" data-style="flip" data-timezone="Africa/Lagos" data-textcolor="#ffffff" data-date="2026-02-28 09:00" data-background="" data-digitscolor="#f7f4f4" data-unitscolor="#ffffff">Countdown To D-day</a>
+<a href="https://logwork.com/countdown-acth" className="countdown-timer " data-style="flip" data-timezone="Africa/Lagos" data-textcolor="#ffffff" data-date="2026-02-28 09:00" data-background="" data-digitscolor="#f7f4f4" data-unitscolor="#ffffff">Countdown To D-day</a>
         </Col>
       </Row>
       <Row>
