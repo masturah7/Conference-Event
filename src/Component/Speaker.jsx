@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
-import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 // importing of images
 import speaker1 from "../assets/speaker/Odunayo.jpg";
@@ -10,12 +10,9 @@ import speaker3 from "../assets/speaker/Shodunke.jpg";
 import speaker4 from "../assets/speaker/Ndidi.jpg";
 import speaker5 from "../assets/speaker/Adenuga.jpg";
 import speaker6 from "../assets/speaker/Temi.jpg";
-
 import speaker7 from "../assets/speaker/Awosika.jpg";
 import speaker8 from "../assets/speaker/Durotoye.jpg";
 import speaker9 from "../assets/speaker/Alabi.jpg";
-
-
 
 const speakerSlides = [
   {
@@ -37,20 +34,25 @@ const speakerSlides = [
       },
     ],
   },
-
   {
     speaker: [
       {
         image: speaker4,
         name: "Ndidi Okonkwo Nwuneli",
-        designation: "Social entrepreneur and investor.",
+        designation: "Social entrepreneur and investor",
       },
-      { image: speaker5, name: "Dr. Mike Adenuga Jr.", designation: "CTO" },
-      { image: speaker6, name: "Temie Giwa-Tubosun", designation: "Entrepreneur & Health Innovator" },
-      
+      {
+        image: speaker5,
+        name: "Dr. Mike Adenuga Jr.",
+        designation: "CTO",
+      },
+      {
+        image: speaker6,
+        name: "Temie Giwa-Tubosun",
+        designation: "Entrepreneur & Health Innovator",
+      },
     ],
   },
-
   {
     speaker: [
       {
@@ -61,12 +63,12 @@ const speakerSlides = [
       {
         image: speaker8,
         name: "Fela Durotoye",
-        designation: "Leadership coach and motivational speaker.",
+        designation: "Leadership coach & speaker",
       },
       {
         image: speaker9,
         name: "Akin Alabi",
-        designation: "Entrepreneur and politician.",
+        designation: "Entrepreneur & politician",
       },
     ],
   },
@@ -74,51 +76,47 @@ const speakerSlides = [
 
 const Speaker = () => {
   return (
-
-
     <>
+      <section id="speakers" className="mt-5 text-center mb-5">
+        <h1>Meet the Speakers</h1>
+        <p>Inspiring Experience, Bold Ideals. Catalyst with a difference</p>
+      </section>
 
-    <section id="speakers" className="mt-5 text-center mb-5">
+      <Carousel
+        interval={3500}
+        pause={false}
+        indicators={false}
+        className="pb-5"
+      >
+        {speakerSlides.map((slide, index) => (
+          <Carousel.Item key={index}>
+            <Container>
+              <Row className="g-4 justify-content-center">
+                {slide.speaker.map((speaker, idx) => (
+                  <Col xs={12} sm={6} md={4} key={idx}>
+                    <div className="speaker-card">
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="speaker-img"
+                      />
 
-        <h1> Meet the Speakers</h1>
-        <p>Inspiring Experience, Bold Ideals. Catalyst with the difference</p>
-    </section>
-    <Carousel interval={3500} pause={false} indicators={false} className="pb-5">
-      {speakerSlides.map((slide, index) => (
-        <Carousel.Item key={index}>
-          <Container>
-            <Row className="g-4">
+                      <div className="speaker-overlay"></div>
 
-              {slide.speaker.map((speaker, idx) => (
-                <Col md={4} key={idx}>
-                  <div className="speaker-card">
-
-                    <img
-                      src={speaker.image}
-                      alt={speaker.name}
-                      className="speaker-img"
-                    />
-
-                   
-                    <div className="speaker-overlay"></div>
-
-                    <div className="speaker-info">
-                      <h5>{speaker.name}</h5>
-                      <span>{speaker.designation}</span>
+                      <div className="speaker-info">
+                        <h5>{speaker.name}</h5>
+                        <span>{speaker.designation}</span>
+                      </div>
                     </div>
-
-                  </div>
-                </Col>
-              ))}
-
-            </Row>
-          </Container>
-        </Carousel.Item>
-      ))}
-    </Carousel>
-
+                  </Col>
+                ))}
+              </Row>
+            </Container>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </>
-  )
-}
+  );
+};
 
-export default Speaker
+export default Speaker;
